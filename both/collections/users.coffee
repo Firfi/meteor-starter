@@ -1,5 +1,13 @@
 Schemas.UserProfile = new SimpleSchema(
 
+  general:
+    type: Object,
+    optional: true
+  'general.children':
+    type: [Object]
+  'general.children.$.id':
+    type: String
+
   picture:
     type: String
     optional:true
